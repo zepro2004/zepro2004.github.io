@@ -186,6 +186,7 @@ figcaption {
     text-align: center;
     font-size: 1.6em;
     padding-top: 0.7em;
+    padding-bottom: 1em;
 }
 .socials {
     margin: 0;
@@ -201,29 +202,24 @@ figcaption {
     padding: 0.625em;
     text-decoration: none;
 }
- @media only screen and (max-width: 400px){
-    .header {
-        padding-bottom: 2rem;
-        background-color: #202020;
-        position: fixed;
-        width: 100%;
-        height: 7vh;
-    }
-    #navbar {
-        padding-top: 0.625em;
-        top: 0;
-        left: 0;
-        bottom: 1rem;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
+ @media only screen and (max-width: 1000px){
     .nav-link {
         padding: 0.2em;
         display: inline;
         margin-left: 0.4em;
         margin-right: 0.4em;
         font-size: 1.2em;
+    }
+    #profile-link button {
+        font-size: 1em;
+    }
+    .fa {
+        font-size: 1em;
+        padding: 0.3em;
+    }
+    .closing-statement {
+        font-size: 1.4em;
+        padding-bottom: 0.5em;
     }
  }
 
