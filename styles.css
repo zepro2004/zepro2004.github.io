@@ -221,6 +221,13 @@ figcaption {
         font-size: 1.4em;
         padding-bottom: 0.5em;
     }
+    img {
+        width: 300px;
+        height: 250px;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }
  }
 
 
