@@ -1,0 +1,206 @@
+
+:root {
+    --background: #016056; 
+    --hover: #004c4c;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-image: url("https://images.wallpaperscraft.com/image/single/black_dark_fractal_149686_3840x2160.jpg");
+    background-size: 100vw 100vh;
+}
+main{
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVIGATION BAR */
+
+.header {
+    padding-bottom: 2rem;
+    background-color: #202020;
+    position: fixed;
+    width: 100%;
+    height: 7vh;
+}
+#navbar {
+    padding-top: 0.625em;
+    top: 0;
+    left: 0;
+    bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-link {
+    padding: 0.625em;
+    display: inline;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1.4em;
+}
+
+.nav-link:hover {
+    background-color: var(--hover);
+}
+
+/* INTRODUCTION WORDS */
+
+#welcome-section {
+    padding-top: 200px;
+    text-align: left ;
+    padding-left: 20vw;
+}
+.intro-yellow {
+    color: yellow;
+}
+h1 {
+    font-weight: bolder;
+    font-size: 3.2em;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+/* RESUME AND LINKEDIN BUTTONS */
+
+.button {
+    display: flex;
+    align-items: center ;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding-left: 20vw;
+}
+a {
+    padding: 3px;
+    color: white; 
+    text-decoration: none;
+}
+.buttons button {
+    display: block;
+    width: 100%;
+    border-radius: 0.625em;
+    border: 2px solid var(--background);
+    margin: 1em auto;
+    height: 2.6em;
+    font-size: 1rem;
+    background-color: var(--background);
+    border-color: var(--background);
+    min-width: 3.2em;
+    cursor: pointer;
+}
+button.hire {
+    color: white;
+}
+button.hire:hover {
+    background-color: var(--hover);
+}
+button.work {
+    background-color: #202020;
+    color: teal;
+}
+button.work:hover {
+    background-color: #010804;
+}
+
+/* PROJECTS HERE */
+
+h2 {
+    text-align: center;
+    padding: 3em;
+    font-size: 1.6em;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.project-tile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+}
+
+.project {
+    padding:  1em 0 0 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+img {
+    width: 400px;
+    height: 350px;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+figcaption {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.4em;
+    color: #11eded;
+}
+
+/* SEE MORE LINE */
+
+#profile-link {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    margin-left: 42.5%;
+}
+
+#profile-link button {
+    width: 100%;
+    height: 3em;
+    border: 2px solid var(--background);
+    margin: 1em auto;
+    background-color: var(--background);
+    border-color: var(--background);
+    min-width: 3.2em;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #fff;
+    cursor: pointer;
+}
+#profile-link button:hover {
+    background-color: var(--hover);
+}
+
+/* FOOTER IS HERE */
+
+#contact {
+    margin-top: 3em;
+    background: var(--background);
+}
+
+.closing-statement {
+    text-align: center;
+    font-size: 1.6em;
+    padding-top: 0.7em;
+}
+.socials {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-links:hover {
+    transform: translateY(5px);
+}
+.fa {
+    font-size: 1.25em;
+    padding: 0.625em;
+    text-decoration: none;
+}
+
+
+
