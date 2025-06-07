@@ -1,7 +1,3 @@
-/*-- Author: Louis Bertrand Ntwali
--- Student ID: 041160530
---*/
-
 const { captureOwnerStack } = require("react");
 
 // Select DOM elements
