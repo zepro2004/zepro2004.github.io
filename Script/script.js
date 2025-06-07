@@ -1,5 +1,3 @@
-const { captureOwnerStack } = require("react");
-
 // Select DOM elements
 const projectTile = document.querySelector(".project-tile");
 const nextBtn = document.querySelector(".next-project");
