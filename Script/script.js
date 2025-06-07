@@ -7,6 +7,7 @@ const description = document.querySelector("#project-description");
 const date = document.querySelector("#project-date");
 const img = document.querySelector("#project-image");
 const link = document.querySelector("#project-link");
+const technologies = document.querySelector("#technologies");
 
 let currentProject = 1; // Initialize current project index
 
@@ -20,6 +21,7 @@ const projects = [
     image: "./images/Projects/NotesApp.png",
     source: "https://github.com/zepro2004/Notes-App",
     caption: "Fig. Notes App",
+    technologies: "Java, Maven, and SQL.",
   },
 
   {
@@ -30,6 +32,7 @@ const projects = [
     image: "./images/Projects/EventsWebsite.png",
     source: "https://github.com/zepro2004/Event-Attendees-Management-Website",
     caption: "Fig. Events Management Website",
+    technologies: "JavaScript, PHP, SQL, HTML, CSS",
   },
 
   {
@@ -40,6 +43,7 @@ const projects = [
     image: "./images/Projects/PalindromeChecker.png",
     source: "https://jsfiddle.net/bcbzepro/bhLc2a3p/1/",
     caption: "Fig. palindrome checker",
+    technologies: "JavaScript, HTML, CSS",
   },
   {
     title: "Decimal Converter",
@@ -48,6 +52,7 @@ const projects = [
     image: "./images/Projects/DecimalConverter.png",
     source: "https://jsfiddle.net/bcbzepro/o53hcbLn/1/",
     caption: "Fig. Decimal to binary converter",
+    technologies: "JavaScript, HTML, CSS",
   },
   {
     title: "Telephone Validator",
@@ -57,6 +62,7 @@ const projects = [
     image: "./images/Projects/TelephoneValidator.png",
     source: "https://jsfiddle.net/bcbzepro/9suLda7r/1/",
     caption: "Fig. Telephone number validator",
+    technologies: "JavaScript, HTML, CSS",
   },
   {
     title: "Roman Numeral Converter",
@@ -66,6 +72,7 @@ const projects = [
     image: "./images/Projects/RomanConverter.png",
     source: "https://jsfiddle.net/bcbzepro/vm39fja0/1/",
     caption: "Fig. Roman numeral converter",
+    technologies: "JavaScript, HTML, CSS",
   },
 ];
 
@@ -77,6 +84,7 @@ const updateProject = () => {
     title.textContent = projects[currentProject].title;
     description.textContent = projects[currentProject].description;
     date.textContent = `Date: ${projects[currentProject].date}`;
+    technologies.innerHTML = `<strong>Technologies: </strong>${projects[currentProject].technologies}`;
     img.src = projects[currentProject].image;
     link.href = projects[currentProject].source;
     projectTile.style.opacity = 1; // Fade in effect
