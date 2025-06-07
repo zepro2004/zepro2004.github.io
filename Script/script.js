@@ -2,6 +2,8 @@
 -- Student ID: 041160530
 --*/
 
+const { captureOwnerStack } = require("react");
+
 // Select DOM elements
 const projectTile = document.querySelector(".project-tile");
 const nextBtn = document.querySelector(".next-project");
@@ -10,12 +12,32 @@ const title = document.querySelector("#project-title");
 const description = document.querySelector("#project-description");
 const date = document.querySelector("#project-date");
 const img = document.querySelector("#project-image");
-const link = document.querySelector("#project-link"); 
+const link = document.querySelector("#project-link");
 
 let currentProject = 1; // Initialize current project index
 
 // Array of project objects
 const projects = [
+  {
+    title: "Notes App",
+    description:
+      "Stores Notes and ToDos. Uses Java Swing for the frontend and MySQL for the backend. Maven is used as the build tool.",
+    date: "2025-04-15",
+    image: "./images/Projects/NotesApp.png",
+    source: "https://github.com/zepro2004/Notes-App",
+    caption: "Fig. Notes App",
+  },
+
+  {
+    title: "Events Management Website",
+    description:
+      "A dynamic website to manage events. Attendees can RSVP to events, whereas admins can create and delete events.",
+    date: "2025-03-20",
+    image: "./images/Projects/EventsWebsite.png",
+    source: "https://github.com/zepro2004/Event-Attendees-Management-Website",
+    caption: "Fig. Events Management Website",
+  },
+
   {
     title: "Palindrome Checker",
     description:
@@ -87,4 +109,3 @@ prevBtn.addEventListener("click", previousProject);
 
 // Initial call to display the first project
 updateProject();
-
